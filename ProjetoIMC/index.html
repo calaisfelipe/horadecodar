@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+ 
+    <h1>Calculadora IMC</h1>
+ 
+ <section>
+<div>Altura:<input type="number" name="altura" id="alt" placeholder="Exemplo: 1,78"> M</div>
+<div>Peso: <input type="number" name="peso" id="pes" placeholder="Exemplo 88,3"> kg </div>
+<div><small><em>Peso Max:300kg  Altura Max: 3,00m</em></small></div>
+<hr>
+<input type="button" value="Calcular" onclick="calcula()">
+<input type="button" value="Limpar" onclick="limpa()">
+<div id="result"></div>
+<div id="info"></div>
+ </section>
+
+
+<footer>@calaisfelipe</footer>
+    <script src="calcimc.js"> </script>
+</body>
+</html>

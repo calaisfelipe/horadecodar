@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+h1{ color: white;
+    text-align: center;
+background-color: #29372E;
+
+}
+body{background-image: url(Imagens/wealth-g93e9344f7_1280.jpg);
+  
+}
+
+main{ border: 1pt;}
+
+section{width: 400px;
+height: 300px;
+background-color: lightgrey;
+border-radius: 10px;
+margin: auto;
+box-shadow: 10px 10px 10px ;}
+
+
+.form{
+    text-align: center;
+    padding: 5px;
+}
+
+.btn{background-color: #29372E;
+    color: white;
+    padding: 5px;
+border-radius: 5px;
+}
+
+#result{font-size: larger;
+    text-align: center;
+}
