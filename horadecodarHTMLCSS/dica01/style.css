@@ -1,0 +1,17 @@
+body{margin: 50px;}
+
+
+#circulo{ 
+height: 300px;
+width: 300px;
+background-color: red;
+border-radius: 50%;
+}
+
+#circulo2{ 
+    margin: 50px;
+    border-style: dashed;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
