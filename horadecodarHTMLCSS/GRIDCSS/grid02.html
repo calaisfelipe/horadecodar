@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Site</title>
+</head>
+<style>
+#container{ border:3px solid black;
+height: 80vh;
+width: 95vw;
+padding: 4px;
+background-color: lightgrey;
+display: grid;
+row-gap: 5px;
+gap:3px;
+grid-template-areas: 
+'header header sidebar'
+'conteudo conteudo sidebar' 
+'footer footer sidebar';
+
+}
+
+#header{
+    grid-area: header;
+}
+
+#conteudo{
+    grid-area: conteudo;
+}
+
+#sidebar{
+    grid-area: sidebar;
+
+}
+
+#footer{
+    grid-area: footer;
+}
+
+
+
+.bars{
+    background-color: lightcoral;
+    border:2px solid black;
+}
+
+</style>
+
+
+
+<body>
+
+  <div id="container">
+
+    <div class="bars" id="header">Header</div>
+    <div class="bars" id="sidebar">Sidebar</div>
+    <div class="bars" id="conteudo">conteudo</div>
+    <div class="bars" id="footer">footer</div>
+
+
+  </div>
+
+
+</body>
+</html>

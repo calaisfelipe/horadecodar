@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Site</title>
+</head>
+<style>
+#container{ border:3px solid black;
+height: 40vh;
+width: 95vw;
+padding: 4px;
+background-color: lightgrey;
+display: grid;
+grid-template-columns: auto auto auto;
+
+/*Horizontal*/
+justify-content: flex-start;
+/*vertical*/
+align-items: center;
+}
+
+.bars{
+    background-color: lightcoral;
+    border:2px solid black;
+    padding: 10px;
+}
+
+</style>
+
+<body>
+
+  <div id="container">
+
+    <div class="bars">1</div>
+    <div class="bars">2</div>
+    <div class="bars">3</div>
+    <div class="bars">4</div>
+    <div class="bars">5</div>
+    <div class="bars">6</div>
+
+  </div>
+
+
+</body>
+</html>
