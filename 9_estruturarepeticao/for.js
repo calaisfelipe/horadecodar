@@ -1,8 +1,8 @@
 
-
+/*
 for(var i=0; i<=10;i++){
     console.log('vc é um gostoso')
-}
+}*/
 
 
 var arr= ['vc','é',10,'!']
