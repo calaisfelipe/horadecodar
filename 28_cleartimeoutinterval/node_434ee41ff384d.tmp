@@ -1,0 +1,23 @@
+/*var x=0;
+
+var myTimer = setTimeout( function(){
+    console.log('x é 0')
+},1500)
+
+x = 5;
+
+if(x>0){
+    clearTimeout(myTimer)
+    console.log('x passou de 0')
+}*/
+
+var myInterval = setInterval( function()
+{console.log('intervalo :D')
+},1000)
+
+for (var y = 0; y < 1000; y++){
+    if(y == 1000){
+        clearInterval(myInterval)
+        console.log('fim')
+    }(console.log('rodando'))
+}
