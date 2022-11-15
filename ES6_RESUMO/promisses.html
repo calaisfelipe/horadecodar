@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promisses</title>
+</head>
+<body>
+    
+    <script>
+        var defer = new Promise((resolve,reject) =>{
+            
+            //settimeout simula o tempo de resposta da API
+            setTimeout(()=>{
+
+                //O dado será Hello,its works 
+            if(true) {
+                resolve('Hello, its works')
+            } else {
+                reject('Error')
+            }},2000)
+        }
+        )
+
+        defer
+        .then((data) =>{
+        console.log(data)
+        return 'foo'
+        })
+        .then((data)=>{
+            console.log(data)
+        })
+        .catch((err) =>{
+            console.log(`Ocorreu um erro:${err}`)
+        })
+
+    </script>
+</body>
+</html>
