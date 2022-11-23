@@ -1,0 +1,9 @@
+
+//INVERTENDO ELEMENTOS DO ARRAY
+var arr = [2,4,5,6,12,24,23]
+const arrreverse = arr.reverse()
+console.log(arrreverse)
+
+//ORGANIZANDO O ARRAY PELO PRIMEIRO ALGARISMO
+const organizado = arr.sort()
+console.log(organizado)
