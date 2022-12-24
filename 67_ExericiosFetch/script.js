@@ -8,6 +8,13 @@ const stateInput = document.querySelector('#iestado')
 const neighoodInput = document.querySelector('#ibairro')
 const cityInput = document.querySelector('#icity')
 const complementoInput = document.querySelector('#icomplement')
+const formCep = document.querySelector('#form-cep')
+
+
+const myModal = document.getElementById('modalMine')
+const fade = document.getElementById('fade')
+const btnClose = document.querySelector(('#btn-close'))
+const modalText = document.querySelector('#modal-text')
 
 
 //GET CEP
@@ -17,15 +24,34 @@ async function getCep(location){
         const newCep = await fetch(`${url}${location}/json/`)
         const response = await newCep.json()
 
+        if(response.erro){
+            errorMsg('Cep invalido. Tente novamente')
+            return
+        }else{
     return response}
+}
     catch{
-        alert('ERRO-CEP iNVALIDO')
-        cepInput.value= ''
-        cepInput.focus()
+
+        errorMsg('Cep invalido. Tente novamente')
 
     }
 
 }
+
+function errorToggle(){
+    
+    fade.classList.toggle('hide')
+    myModal.classList.toggle('hide')
+}
+
+
+function errorMsg(error){
+    modalText.innerText = error
+    errorToggle()
+
+        
+}
+
 
 //SHOW INFORMATIONS
 async function ShowCep(location){
@@ -47,11 +73,14 @@ async function ShowCep(location){
 btnCep.addEventListener('click',(e) =>{
     e.preventDefault()
     const location = cepInput.value
+    if(location === ''){
+        errorMsg('ERRO- Favor digitar um CEP')
+    }else{
+
     ShowCep(location) 
-      
+    }
 
 })
-
 
 cepInput.addEventListener('keypress', (e)=>{
    
@@ -59,5 +88,14 @@ cepInput.addEventListener('keypress', (e)=>{
     e.preventDefault()
    }
 
+
+})
+
+
+btnClose.addEventListener('click', ()=>{
+    errorToggle()
+    formCep.reset()
+    cepInput.value= ''
+    cepInput.focus()
 
 })
