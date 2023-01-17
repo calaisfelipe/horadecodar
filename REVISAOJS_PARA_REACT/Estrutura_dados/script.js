@@ -56,3 +56,12 @@ console.log(map2.indexOf(888))
 console.log(map2.lastIndexOf(156))
 
 
+
+
+
+
+
+
+
+
+
