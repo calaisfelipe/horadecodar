@@ -52,3 +52,6 @@ console.log(letra.split(''))
 
 
 felipe.zoeira()
+
+const data = new Date() 
+console.log(Number(data))
